@@ -33,7 +33,7 @@ gulp.task('install', function() {
         });
 });
 
-gulp.task('build_css', function () {
+gulp.task('buildCSS', function () {
     return gulp.src([paths.styles.src+'**/*.less','bower_components/bootstrap/less/bootstrap.less'])
         .pipe(less({
             paths: [ path.join(__dirname, 'less', 'includes') ]
@@ -43,7 +43,7 @@ gulp.task('build_css', function () {
         .pipe(gulp.dest(paths.styles.dest))
 });
 
-gulp.task('build_js', ['hint', 'jscs'], function() {
+gulp.task('buildJS', ['hint', 'jscs'], function() {
     return gulp.src(paths.scripts.src+'*.js')
         .pipe(concat('all.min.js'))
         .pipe(uglify())
@@ -63,4 +63,4 @@ gulp.task('jscs', function() {
         }));
 });
 
-gulp.task('build', ['install','build_css', 'build_js']);
+gulp.task('build', ['install','buildCSS', 'buildJS']);
