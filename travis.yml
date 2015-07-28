@@ -1,0 +1,16 @@
+language: node_js
+
+node_js:
+  - "0.12"
+
+install: npm install
+
+before_script:
+  - ./node_modules/bower/bin/bower install
+  - export DISPLAY=:99.0
+  - sh -e /etc/init.d/xvfb start
+
+script:
+ - gulp
+ - gulp build
+ - npm test
