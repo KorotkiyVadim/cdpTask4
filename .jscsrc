@@ -1,3 +1,14 @@
 {
-	"preset": "yandex"
+  "requireLineFeedAtFileEnd": true
+, "disallowMultipleLineBreaks": true
+, "requireMultipleVarDecl": true
+, "disallowEmptyBlocks": true
+, "disallowSpaceAfterObjectKeys": true
+, "disallowCommaBeforeLineBreak": true
+, "disallowTrailingWhitespace": true
+, "requireCapitalizedConstructors": true
+, "requireSpacesInsideObjectBrackets": "all"
+, "requireSpacesInsideArrayBrackets": "all"
+
+
 }
