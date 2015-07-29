@@ -63,4 +63,5 @@ gulp.task('jscs', function() {
         }));
 });
 
-gulp.task('build', ['install','buildCSS', 'buildJS']);
+gulp.task('default', ['install','buildCSS', 'buildJS']);
+

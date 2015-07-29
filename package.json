@@ -5,6 +5,7 @@
   "main": "all.js",
   "devDependencies": {
     "bower": "^1.4.1",
+    "gulp": "^3.9.0",
     "gulp-concat": "^2.6.0",
     "gulp-jscs": "^1.6.0",
     "gulp-jshint": "^1.11.2",
